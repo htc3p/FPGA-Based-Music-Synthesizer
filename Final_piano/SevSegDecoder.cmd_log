@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/Users/Petch/Desktop/DIgital/sevSeg_final/sevSeg_final.v -lang verilog -prj Final_piano -o SevSegDecoder.spl -module SevSegDecoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 SevSegDecoder.spl C:/Users/Petch/Desktop/DIgital/Final_piano/SevSegDecoder.sym 
+vhdtdtfi -lib work C:/Users/Petch/Desktop/DIgital/sevSeg_final/sevSeg_final.v -lang verilog -prj Final_piano -o SevSegDecoder.spl -module SevSegDecoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w SevSegDecoder.spl C:/Users/Petch/Desktop/DIgital/Final_piano/SevSegDecoder.sym 
+vhdtdtfi -lib work C:/Users/Petch/Desktop/DIgital/sevSeg_final/sevSeg_final.v -lang verilog -prj Final_piano -o SevSegDecoder.spl -module SevSegDecoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w SevSegDecoder.spl C:/Users/Petch/Desktop/DIgital/Final_piano/SevSegDecoder.sym 

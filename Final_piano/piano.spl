@@ -1,0 +1,9 @@
+[Inputs]
+clk
+=switches[12:0]=
+[Outputs]
+=speaker[12:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel piano
+

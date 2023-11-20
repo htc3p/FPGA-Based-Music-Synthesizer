@@ -1,0 +1,498 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Petch\Desktop\DIgital\sevSeg_final\sevSeg_final.v" into library work
+Parsing module <SevSegDecoder>.
+Analyzing Verilog file "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" into library work
+Parsing module <piano>.
+Analyzing Verilog file "C:\Users\Petch\Desktop\DIgital\Final_piano\led_state.vf" into library work
+Parsing module <led_state>.
+Analyzing Verilog file "C:\Users\Petch\Desktop\DIgital\Final_piano\top.vf" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+
+Elaborating module <piano>.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 27: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 33: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 39: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 45: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 51: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 57: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 63: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 69: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 75: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 81: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 87: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 93: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v" Line 99: Result of 22-bit expression is truncated to fit in 21-bit target.
+
+Elaborating module <led_state>.
+
+Elaborating module <BUF>.
+
+Elaborating module <OR5>.
+
+Elaborating module <OR2>.
+
+Elaborating module <SevSegDecoder>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Users\Petch\Desktop\DIgital\Final_piano\top.vf".
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <piano>.
+    Related source file is "C:\Users\Petch\Desktop\DIgital\piano3\piano3.v".
+        m = 10
+        n = 20
+        C3 = 3822
+        C3_s = 3608
+        D3 = 3405
+        D3_s = 3214
+        E3 = 3034
+        F3 = 2864
+        F3_s = 2703
+        G3 = 2551
+        G3_s = 2408
+        A3 = 2273
+        A3_s = 2145
+        B3 = 2025
+        C4 = 1911
+    Found 1-bit register for signal <flipper<12>>.
+    Found 1-bit register for signal <flipper<11>>.
+    Found 1-bit register for signal <flipper<10>>.
+    Found 1-bit register for signal <flipper<9>>.
+    Found 1-bit register for signal <flipper<8>>.
+    Found 1-bit register for signal <flipper<7>>.
+    Found 1-bit register for signal <flipper<6>>.
+    Found 1-bit register for signal <flipper<5>>.
+    Found 1-bit register for signal <flipper<4>>.
+    Found 1-bit register for signal <flipper<3>>.
+    Found 1-bit register for signal <flipper<2>>.
+    Found 1-bit register for signal <flipper<1>>.
+    Found 1-bit register for signal <flipper<0>>.
+    Found 21-bit register for signal <counterC3_s>.
+    Found 21-bit register for signal <counterD3>.
+    Found 21-bit register for signal <counterD3_s>.
+    Found 21-bit register for signal <counterE3>.
+    Found 21-bit register for signal <counterF3>.
+    Found 21-bit register for signal <counterF3_s>.
+    Found 21-bit register for signal <counterG3>.
+    Found 21-bit register for signal <counterG3_s>.
+    Found 21-bit register for signal <counterA3>.
+    Found 21-bit register for signal <counterA3_s>.
+    Found 21-bit register for signal <counterB3>.
+    Found 21-bit register for signal <counterC4>.
+    Found 21-bit register for signal <counterC3>.
+    Found 21-bit adder for signal <counterC3[20]_GND_2_o_add_3_OUT> created at line 27.
+    Found 21-bit adder for signal <counterC3_s[20]_GND_2_o_add_6_OUT> created at line 33.
+    Found 21-bit adder for signal <counterD3[20]_GND_2_o_add_9_OUT> created at line 39.
+    Found 21-bit adder for signal <counterD3_s[20]_GND_2_o_add_12_OUT> created at line 45.
+    Found 21-bit adder for signal <counterE3[20]_GND_2_o_add_15_OUT> created at line 51.
+    Found 21-bit adder for signal <counterF3[20]_GND_2_o_add_18_OUT> created at line 57.
+    Found 21-bit adder for signal <counterF3_s[20]_GND_2_o_add_21_OUT> created at line 63.
+    Found 21-bit adder for signal <counterG3[20]_GND_2_o_add_24_OUT> created at line 69.
+    Found 21-bit adder for signal <counterG3_s[20]_GND_2_o_add_27_OUT> created at line 75.
+    Found 21-bit adder for signal <counterA3[20]_GND_2_o_add_30_OUT> created at line 81.
+    Found 21-bit adder for signal <counterA3_s[20]_GND_2_o_add_33_OUT> created at line 87.
+    Found 21-bit adder for signal <counterB3[20]_GND_2_o_add_36_OUT> created at line 93.
+    Found 21-bit adder for signal <counterC4[20]_GND_2_o_add_39_OUT> created at line 99.
+    Summary:
+	inferred  13 Adder/Subtractor(s).
+	inferred 286 D-type flip-flop(s).
+Unit <piano> synthesized.
+
+Synthesizing Unit <led_state>.
+    Related source file is "C:\Users\Petch\Desktop\DIgital\Final_piano\led_state.vf".
+    Summary:
+	no macro.
+Unit <led_state> synthesized.
+
+Synthesizing Unit <SevSegDecoder>.
+    Related source file is "C:\Users\Petch\Desktop\DIgital\sevSeg_final\sevSeg_final.v".
+    Summary:
+	no macro.
+Unit <SevSegDecoder> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 13
+ 21-bit adder                                          : 13
+# Registers                                            : 26
+ 1-bit register                                        : 13
+ 21-bit register                                       : 13
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <piano>.
+The following registers are absorbed into counter <counterC3_s>: 1 register on signal <counterC3_s>.
+The following registers are absorbed into counter <counterD3>: 1 register on signal <counterD3>.
+The following registers are absorbed into counter <counterD3_s>: 1 register on signal <counterD3_s>.
+The following registers are absorbed into counter <counterE3>: 1 register on signal <counterE3>.
+The following registers are absorbed into counter <counterF3_s>: 1 register on signal <counterF3_s>.
+The following registers are absorbed into counter <counterF3>: 1 register on signal <counterF3>.
+The following registers are absorbed into counter <counterG3>: 1 register on signal <counterG3>.
+The following registers are absorbed into counter <counterG3_s>: 1 register on signal <counterG3_s>.
+The following registers are absorbed into counter <counterA3>: 1 register on signal <counterA3>.
+The following registers are absorbed into counter <counterA3_s>: 1 register on signal <counterA3_s>.
+The following registers are absorbed into counter <counterB3>: 1 register on signal <counterB3>.
+The following registers are absorbed into counter <counterC4>: 1 register on signal <counterC4>.
+The following registers are absorbed into counter <counterC3>: 1 register on signal <counterC3>.
+Unit <piano> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 13
+ 21-bit up counter                                     : 13
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <piano> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 286
+ Flip-Flops                                            : 286
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1227
+#      BUF                         : 13
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 260
+#      LUT2                        : 289
+#      LUT3                        : 13
+#      LUT4                        : 4
+#      LUT5                        : 6
+#      LUT6                        : 88
+#      MUXCY                       : 260
+#      OR2                         : 5
+#      OR5                         : 1
+#      VCC                         : 1
+#      XORCY                       : 273
+# FlipFlops/Latches                : 286
+#      FD                          : 286
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 43
+#      IBUF                        : 13
+#      OBUF                        : 30
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             286  out of  11440     2%  
+ Number of Slice LUTs:                  673  out of   5720    11%  
+    Number used as Logic:               673  out of   5720    11%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    673
+   Number with an unused Flip Flop:     387  out of    673    57%  
+   Number with an unused LUT:             0  out of    673     0%  
+   Number of fully used LUT-FF pairs:   286  out of    673    42%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    102    43%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 286   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.923ns (Maximum Frequency: 254.920MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.453ns
+   Maximum combinational path delay: 8.641ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.923ns (frequency: 254.920MHz)
+  Total number of paths / destination ports: 9035 / 286
+-------------------------------------------------------------------------
+Delay:               3.923ns (Levels of Logic = 3)
+  Source:            XLXI_1/counterD3_s_9 (FF)
+  Destination:       XLXI_1/counterD3_s_20 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_1/counterD3_s_9 to XLXI_1/counterD3_s_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  XLXI_1/counterD3_s_9 (XLXI_1/counterD3_s_9)
+     LUT6:I0->O            3   0.203   0.898  XLXI_1/GND_2_o_GND_2_o_equal_12_o<20>3 (XLXI_1/GND_2_o_GND_2_o_equal_12_o<20>2)
+     LUT6:I2->O           11   0.203   0.883  XLXI_1/GND_2_o_GND_2_o_equal_12_o<20>5 (XLXI_1/GND_2_o_GND_2_o_equal_12_o)
+     LUT2:I1->O            1   0.205   0.000  XLXI_1/counterD3_s_20_rstpot (XLXI_1/counterD3_s_20_rstpot)
+     FD:D                      0.102          XLXI_1/counterD3_s_20
+    ----------------------------------------
+    Total                      3.923ns (1.160ns logic, 2.763ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              4.453ns (Levels of Logic = 2)
+  Source:            XLXI_1/flipper_12 (FF)
+  Destination:       speaker<12> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: XLXI_1/flipper_12 to speaker<12>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.651  XLXI_1/flipper_12 (XLXI_1/flipper_12)
+     LUT2:I1->O            1   0.205   0.579  XLXI_1/speaker<12>1 (speaker_12_OBUF)
+     OBUF:I->O                 2.571          speaker_12_OBUF (speaker<12>)
+    ----------------------------------------
+    Total                      4.453ns (3.223ns logic, 1.230ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 218 / 30
+-------------------------------------------------------------------------
+Delay:               8.641ns (Levels of Logic = 6)
+  Source:            SW<12> (PAD)
+  Destination:       sevSeg<2> (PAD)
+
+  Data Path: SW<12> to sevSeg<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   1.021  SW_12_IBUF (SW_12_IBUF)
+     LUT4:I0->O            4   0.203   0.684  XLXI_9/seven_seg<8>21 (XLXI_9/seven_seg<8>2)
+     LUT5:I4->O            3   0.205   0.995  XLXI_9/seven_seg<5>51 (XLXI_9/seven_seg<5>5)
+     LUT6:I1->O            3   0.203   0.755  XLXI_9/seven_seg<4>31 (XLXI_9/seven_seg<4>3)
+     LUT2:I0->O            1   0.203   0.579  XLXI_9/seven_seg<6>1 (sevSeg_2_OBUF)
+     OBUF:I->O                 2.571          sevSeg_2_OBUF (sevSeg<2>)
+    ----------------------------------------
+    Total                      8.641ns (4.607ns logic, 4.034ns route)
+                                       (53.3% logic, 46.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.923|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.49 secs
+ 
+--> 
+
+Total memory usage is 4487784 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

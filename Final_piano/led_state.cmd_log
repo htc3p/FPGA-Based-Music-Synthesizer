@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan6 -refsym led_state C:/Users/Petch/Desktop/DIgital/led_state/led_state.sch C:/Users/Petch/Desktop/DIgital/Final_piano/led_state.sym 
+sch2sym -intstyle ise -family spartan6 -refsym led_state C:/Users/Petch/Desktop/DIgital/led_state/led_state.sch C:/Users/Petch/Desktop/DIgital/Final_piano/led_state.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym led_state C:/Users/Petch/Desktop/DIgital/led_state/led_state.sch C:/Users/Petch/Desktop/DIgital/Final_piano/led_state.sym 

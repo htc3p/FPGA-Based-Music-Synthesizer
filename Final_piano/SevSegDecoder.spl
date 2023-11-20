@@ -1,0 +1,8 @@
+[Inputs]
+=i_Val[12:0]=
+[Outputs]
+=seven_seg[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel SevSegDecoder
+

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Petch/Desktop/DIgital/piano3/piano3.v -lang verilog -prj Final_piano -o piano.spl -module piano -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 piano.spl C:/Users/Petch/Desktop/DIgital/Final_piano/piano.sym 

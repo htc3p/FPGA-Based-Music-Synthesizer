@@ -1,0 +1,87 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : led_state.vf
+// /___/   /\     Timestamp : 11/13/2023 12:40:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Petch/Desktop/DIgital/Final_piano/led_state.vf -w C:/Users/Petch/Desktop/DIgital/led_state/led_state.sch
+//Design Name: led_state
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module led_state(d, 
+                 q);
+
+    input [12:0] d;
+   output [8:0] q;
+   
+   wire XLXN_32;
+   wire XLXN_33;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_57;
+   wire XLXN_58;
+   
+   BUF  XLXI_1 (.I(d[12]), 
+               .O(XLXN_58));
+   BUF  XLXI_4 (.I(d[10]), 
+               .O(XLXN_32));
+   BUF  XLXI_6 (.I(d[8]), 
+               .O(q[6]));
+   BUF  XLXI_7 (.I(d[7]), 
+               .O(XLXN_48));
+   BUF  XLXI_8 (.I(d[5]), 
+               .O(XLXN_50));
+   BUF  XLXI_9 (.I(d[3]), 
+               .O(XLXN_54));
+   BUF  XLXI_10 (.I(d[1]), 
+                .O(q[2]));
+   BUF  XLXI_11 (.I(d[0]), 
+                .O(q[1]));
+   OR5  XLXI_17 (.I0(XLXN_55), 
+                .I1(XLXN_53), 
+                .I2(XLXN_49), 
+                .I3(XLXN_33), 
+                .I4(XLXN_57), 
+                .O(q[0]));
+   BUF  XLXI_19 (.I(d[11]), 
+                .O(XLXN_57));
+   BUF  XLXI_20 (.I(d[9]), 
+                .O(XLXN_33));
+   BUF  XLXI_21 (.I(d[6]), 
+                .O(XLXN_49));
+   BUF  XLXI_22 (.I(d[4]), 
+                .O(XLXN_53));
+   BUF  XLXI_23 (.I(d[2]), 
+                .O(XLXN_55));
+   OR2  XLXI_25 (.I0(XLXN_33), 
+                .I1(XLXN_32), 
+                .O(q[7]));
+   OR2  XLXI_27 (.I0(XLXN_49), 
+                .I1(XLXN_48), 
+                .O(q[5]));
+   OR2  XLXI_28 (.I0(XLXN_53), 
+                .I1(XLXN_50), 
+                .O(q[4]));
+   OR2  XLXI_29 (.I0(XLXN_55), 
+                .I1(XLXN_54), 
+                .O(q[3]));
+   OR2  XLXI_30 (.I0(XLXN_57), 
+                .I1(XLXN_58), 
+                .O(q[8]));
+endmodule

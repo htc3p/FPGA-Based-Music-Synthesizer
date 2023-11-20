@@ -1,0 +1,4 @@
+verilog work "../sevSeg_final/sevSeg_final.v"
+verilog work "../piano3/piano3.v"
+verilog work "led_state.vf"
+verilog work "top.vf"

@@ -1,0 +1,43 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : top.vf
+// /___/   /\     Timestamp : 11/13/2023 12:47:04
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Petch/Desktop/DIgital/Final_piano/top.vf -w C:/Users/Petch/Desktop/DIgital/Final_piano/top.sch
+//Design Name: top
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module top(clk, 
+           SW, 
+           led, 
+           sevSeg, 
+           speaker);
+
+    input clk;
+    input [12:0] SW;
+   output [8:0] led;
+   output [7:0] sevSeg;
+   output [12:0] speaker;
+   
+   
+   piano  XLXI_1 (.clk(clk), 
+                 .switches(SW[12:0]), 
+                 .speaker(speaker[12:0]));
+   led_state  XLXI_3 (.d(SW[12:0]), 
+                     .q(led[8:0]));
+   SevSegDecoder  XLXI_9 (.i_Val(SW[12:0]), 
+                         .seven_seg(sevSeg[7:0]));
+endmodule

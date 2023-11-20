@@ -1,0 +1,58 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "led[8]" LOC = P126;
+NET "led[7]" LOC = P112;
+NET "led[6]" LOC = P111;
+NET "led[5]" LOC = P105;
+NET "led[4]" LOC = P104;
+NET "led[3]" LOC = P102;
+NET "led[2]" LOC = P101;
+NET "led[1]" LOC = P100;
+NET "led[0]" LOC = P99;
+
+NET "sevSeg[7]" LOC = P121;
+NET "sevSeg[6]" LOC = P120;
+NET "sevSeg[5]" LOC = P119;
+NET "sevSeg[4]" LOC = P118;
+NET "sevSeg[3]" LOC = P117;
+NET "sevSeg[2]" LOC = P116;
+NET "sevSeg[1]" LOC = P115;
+NET "sevSeg[0]" LOC = P114;
+
+//NET "sevSeg[7]" LOC = P41;
+//NET "sevSeg[6]" LOC = P40;
+//NET "sevSeg[5]" LOC = P35;
+//NET "sevSeg[4]" LOC = P34;
+//NET "sevSeg[3]" LOC = P32;
+//NET "sevSeg[2]" LOC = P29;
+//NET "sevSeg[1]" LOC = P27;
+//NET "sevSeg[0]" LOC = P26;
+
+NET "clk" LOC = P123;
+NET "speaker[12]" LOC = P23;  
+NET "speaker[11]" LOC = P21;
+NET "speaker[10]" LOC = P16;
+NET "speaker[9]" LOC = P14;
+NET "speaker[8]" LOC = P11;
+NET "speaker[7]" LOC = P9;
+NET "speaker[6]" LOC = P7;
+NET "speaker[5]" LOC = P5;
+NET "speaker[4]" LOC = P1;
+NET "speaker[3]" LOC = P142;
+NET "speaker[2]" LOC = P140;
+NET "speaker[1]" LOC = P138;
+NET "speaker[0]" LOC = P134;
+NET "SW[12]" LOC = P24;  //C3
+NET "SW[11]" LOC = P2;   //C3#
+NET "SW[10]" LOC = P22;  //D3
+NET "SW[9]" LOC = P143;  //D3#
+NET "SW[8]" LOC = P17;   //E3
+NET "SW[7]" LOC = P15;   //F3
+NET "SW[6]" LOC = P141;  //F3#
+NET "SW[5]" LOC = P12;   //G3
+NET "SW[4]" LOC = P139;  //G3#
+NET "SW[3]" LOC = P10;   //A3
+NET "SW[2]" LOC = P137;  //A3#
+NET "SW[1]" LOC = P8;    //B3
+NET "SW[0]" LOC = P6;    //C4
